@@ -1,13 +1,14 @@
 import { StyleSheet, Text, View } from "react-native";
 
 const BasketDishItem = ({ dish }) => {
+  console.log(dish.Dish);
   return (
     <View style={styles.row}>
       <View style={styles.quantityContainer}>
-        <Text>1</Text>
+        <Text>{dish.quantity}</Text>
       </View>
-      <Text style={{ fontWeight: "600" }}>{dish.name}</Text>
-      <Text style={{ marginLeft: "auto" }}>${dish.price}</Text>
+      <Text style={{ fontWeight: "600" }}>{"test"}</Text>
+      <Text style={{ marginLeft: "auto" }}>${"1"}</Text>
     </View>
   );
 };
